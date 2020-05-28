@@ -15,7 +15,8 @@ public class Motorcycle extends Vehicle {
     super(regNumber, weight);
   }
 
-  public double getCost(Boolean isRushTime) {
+  public double getCost(boolean isRushTime) {
+    // FIXME: 28/05/2020 change to just return 0?
     if (isRushTime) {
       return RUSH_TIME_COST;
     } else {

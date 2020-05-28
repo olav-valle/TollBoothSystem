@@ -15,7 +15,7 @@ public class PetrolLightVehicle extends LightVehicle {
     super(regNumber, weight);
   }
 
-  public double getCost(Boolean isRushTime) {
+  public double getCost(boolean isRushTime) {
     if (isRushTime) {
       return RUSH_TIME_COST;
     } else {
