@@ -3,7 +3,6 @@ package no.ntnu.exam.model.vehicle;
 /**
  * Class representing a large vehicle, called a truck.
  */
-
 public class Truck extends Vehicle{
 
   // costs as final fields makes it easeier to change and keep track of,

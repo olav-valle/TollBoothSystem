@@ -31,19 +31,9 @@ public abstract class Vehicle implements Payable {
     return weight;
   }
 
-  /**
-   * Returns a string representing this vehicles liscence plate registration number.
-   * @return a string representing this vehicles liscence plate registration number.
-   */
   public String getLisencePlateNumber() {
     return registrationNumber;
   }
 
-  /**
-   * Returns the cost of a single toll passage for this vehicle.
-   * @param isRushTime Boolean true if passage happens during rush hour, false if not.
-   * @return the cost of a passage.
-   */
-  public abstract double getCost(boolean isRushTime);
 }
 
