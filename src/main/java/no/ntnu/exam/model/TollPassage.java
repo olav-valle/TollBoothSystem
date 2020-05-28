@@ -1,19 +1,31 @@
 package no.ntnu.exam.model;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 /**
  * Class representing a single toll booth passage. Contains information about
  * the car that passed, the date and time of the passing, and the cost of the passing.
  */
-public class TollPassage {
-
+@Entity
+public class TollPassage implements Serializable {
+ @Id
+ @GeneratedValue
   private int plazaID;
   private String vehicleRegistration;
   private double cost;
   private LocalDate date;
   private LocalTime time;
+
+  /**
+   * No-arg constructor.
+   */
+  public TollPassage(){
+  }
 
   /**
    * Constructor for a Toll Passage.
